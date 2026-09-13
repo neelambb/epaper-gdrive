@@ -51,7 +51,7 @@ function createCardHTML(file) {
 function renderBatch() {
     const mainContainer = document.getElementById('main-gallery-container');
     if (!mainContainer) return;
-    
+
     const nextBatch = allFiles.slice(displayedCount, displayedCount + BATCH_SIZE);
     
     if (nextBatch.length > 0) {
@@ -76,4 +76,5 @@ function handleLoadMore() {
     renderBatch();
 }
 
+// ग्यालरी सुरु गर्ने
 fetchAndInit();
